@@ -4,12 +4,12 @@ public:
         if(x<0||(x%10==0&&x!=0)){
            return false;
         }
-        int revertedNumber=0;
-        while(x>revertedNumber){
-     revertedNumber = revertedNumber*10+x%10;
+        int reverseNumber=0;
+        while(x>reverseNumber){
+     reverseNumber = reverseNumber*10+x%10;
             x/=10;
         }
-            return x==revertedNumber || x ==revertedNumber/10;
+            return x==reverseNumber || x ==reverseNumber/10;
         }
     
 };
